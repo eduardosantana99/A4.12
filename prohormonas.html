@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prohormonas</title>
+    <style>
+        /* Estilos CSS para mejorar la apariencia del catálogo */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Catálogo de Prohormonas</h1>
+
+    <!-- Producto 1 -->
+    <div class="product">
+        <img src="https://cdn.hsnstore.com/media/catalog/product/cache/2/small_image/224x/9df78eab33525d08d6e5fb8d27136e95/e/v/evosterone-veg-caps-hsn_1.jpg" >
+        <h2>Evosterone</h2>
+        <p>Precio: $29.99</p>
+        <button onclick="addToCart('Evosterone', 29.99)">Agregar al Carrito</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product">
+        <img src="https://cdn.hsnstore.com/media/catalog/product/cache/2/small_image/224x/9df78eab33525d08d6e5fb8d27136e95/e/v/evolus-95-vcaps-hsn_1.jpg">
+        <h2>Evolus-95</h2>
+        <p>Precio: $39.99</p>
+        <button onclick="addToCart('Proteína Vegana', 39.99)">Agregar al Carrito</button>
+    </div>
+
+    <!-- Puedes agregar más productos según sea necesario -->
+
+    <script>
+        // Función JavaScript para manejar el evento de agregar al carrito
+        function addToCart(productName, price) {
+            alert(`Producto "${productName}" agregado al carrito. Precio: $${price}`);
+            // Aquí podrías agregar la lógica para manejar el carrito, como enviar la información al servidor.
+        }
+    </script>
+</body>
+</html>
